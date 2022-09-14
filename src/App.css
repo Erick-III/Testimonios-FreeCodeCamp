@@ -1,0 +1,47 @@
+/*selector universal*/
+*{
+    /*evitamos que asignen valores por defecto*/
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    font-size: 18px;
+    background-color: rgb(84, 140, 84);
+
+}
+
+h1{
+    max-width: 940px;
+    /*em -> factor relativo ej 10px el contenedor entonces
+        2.5 es el tamaño de font*/
+    font-size: 2.5em;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 40px 0;/*sup inf - der izq*/
+}
+
+.App{
+    /*adapta a la altura del navegador*/
+    min-height: 100vh;
+    /*flex herramienta para 
+    definir como se ubican elementos
+    en el contenedor*/
+    display: flex;
+    /*se acomodan los elementos*/
+    flex-wrap: wrap;
+    /*centra horz y vert*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor-principal{
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
